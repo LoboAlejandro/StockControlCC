@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "mayus": "FERNET BRANCA",
+        "nombre": "Fernet Branca",
+        "precio": 1000,
+        "stock": 10,
+        "oferta": 20,
+        "imagen": "image/fernet-branca.jpg"
+    },
+    {
+        "id": 2,
+        "mayus": "FERNET 1882",
+        "nombre": "Fernet 1882",
+        "precio": 560,
+        "stock": 100,
+        "oferta": 0,
+        "imagen": "image/fernet-1882.jpg"
+    },
+    {
+        "id": 3,
+        "mayus": "GANCIA",
+        "nombre": "Gancia",
+        "precio": 450,
+        "stock": 1,
+        "oferta": 0,
+        "imagen": "image/gancia.jpg"
+    }
+]
