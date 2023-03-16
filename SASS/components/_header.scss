@@ -1,0 +1,15 @@
+.nav{
+    @extend %flexColumn;
+    width: 100%;
+    background-color: black;
+
+    &__header{
+        @extend %flexRow;
+        justify-content: space-between;
+        
+    }
+
+    p{
+        color: white;
+    }
+}
