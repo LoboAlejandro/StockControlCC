@@ -5,10 +5,24 @@
 
     &__header{
         @extend %flexRow;
+        padding: 1rem;
         justify-content: space-between;
-        
+        align-items: center;
+
+        &__div{
+
+        }
     }
 
+    &__div{
+        background-color: green;
+        justify-items: center;
+    }
+
+    .logo{
+        width: 5.5rem;
+    }
+    
     p{
         color: white;
     }

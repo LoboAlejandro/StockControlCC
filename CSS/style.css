@@ -10,6 +10,13 @@
   width: 100%;
   background-color: black; }
   .nav__header {
-    justify-content: space-between; }
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center; }
+  .nav__div {
+    background-color: green;
+    justify-items: center; }
+  .nav .logo {
+    width: 5.5rem; }
   .nav p {
     color: white; }
