@@ -1,4 +1,11 @@
-.nav {
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none; }
+
+.nav, .nav__div {
   display: flex;
   flex-flow: column; }
 
@@ -8,15 +15,24 @@
 
 .nav {
   width: 100%;
-  background-color: black; }
+  background-color: white;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 0.1rem black solid; }
   .nav__header {
-    padding: 1rem;
+    padding: 1rem 1rem 0.5rem 1rem;
     justify-content: space-between;
     align-items: center; }
-  .nav__div {
-    background-color: green;
-    justify-items: center; }
+    .nav__header .div__menu .fa-solid {
+      color: black; }
   .nav .logo {
-    width: 5.5rem; }
+    width: 5rem; }
+  .nav__div {
+    align-items: center;
+    text-align: center; }
+    .nav__div h3 {
+      padding: 0;
+      margin: 0 0 0.5rem 0; }
+    .nav__div .divInput__input {
+      width: 3rem; }
   .nav p {
     color: white; }

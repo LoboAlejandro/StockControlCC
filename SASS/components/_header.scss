@@ -1,26 +1,49 @@
 .nav{
     @extend %flexColumn;
     width: 100%;
-    background-color: black;
+    background-color: white;
+    padding: 0 0 0.5rem 0;
+    border-bottom: 0.1rem black solid;
 
     &__header{
         @extend %flexRow;
-        padding: 1rem;
+        padding: 1rem 1rem 0.5rem 1rem;
         justify-content: space-between;
         align-items: center;
 
-        &__div{
+        .div__logo{
 
+            &__a{
+
+            }
         }
+
+        .div__menu{
+            .fa-solid{
+                color: black;
+            }
+        }
+    }
+    
+    .logo{
+        width: 5rem;
     }
 
     &__div{
-        background-color: green;
-        justify-items: center;
-    }
+        @extend %flexColumn;
+        align-items: center;
+        text-align: center;
+        
+        h3{
+            padding: 0;
+            margin: 0 0 0.5rem 0;
+        }
 
-    .logo{
-        width: 5.5rem;
+        .divInput{
+            &__input{
+                width: 3rem;
+            }
+        }
     }
     
     p{
