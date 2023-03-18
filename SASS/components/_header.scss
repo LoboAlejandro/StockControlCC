@@ -33,15 +33,46 @@
         @extend %flexColumn;
         align-items: center;
         text-align: center;
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
         
-        h3{
+        h4{
             padding: 0;
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.2rem 0;
+            color: #616161;
         }
 
         .divInput{
+            @extend %flexRow;
+            justify-content: space-between;
+            align-items: center;
+            border: #616161 0.15rem solid;
+            border-radius: 14px;
+            width: 70%;
+            height: 1.5rem;
+            padding: 0.2rem;
+
             &__input{
-                width: 3rem;
+                width: 100%;
+                border: none;
+                height: 100%;
+                font-size: 1.3rem;
+            }
+
+            i{
+                @extend %flexColumn;
+                justify-content: center;
+                align-items: center;
+                width: 2rem;
+                height: 100%;
+                border-left: #b4b4b4 2px solid;
+            }
+
+            .fa-magnifying-glass{
+                color: #616161;
             }
         }
     }

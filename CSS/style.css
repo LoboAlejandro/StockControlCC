@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.nav, .nav__div {
+.nav, .nav__div, .nav__div .divInput i {
   display: flex;
   flex-flow: column; }
 
-.nav__header {
+.nav__header, .nav__div .divInput {
   display: flex;
   flex-flow: row; }
 
@@ -29,10 +29,33 @@
   .nav__div {
     align-items: center;
     text-align: center; }
-    .nav__div h3 {
+    .nav__div h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem; }
+    .nav__div h4 {
       padding: 0;
-      margin: 0 0 0.5rem 0; }
-    .nav__div .divInput__input {
-      width: 3rem; }
+      margin: 0 0 0.2rem 0;
+      color: #616161; }
+    .nav__div .divInput {
+      justify-content: space-between;
+      align-items: center;
+      border: #616161 0.15rem solid;
+      border-radius: 14px;
+      width: 70%;
+      height: 1.5rem;
+      padding: 0.2rem; }
+      .nav__div .divInput__input {
+        width: 100%;
+        border: none;
+        height: 100%;
+        font-size: 1.3rem; }
+      .nav__div .divInput i {
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 100%;
+        border-left: #b4b4b4 2px solid; }
+      .nav__div .divInput .fa-magnifying-glass {
+        color: #616161; }
   .nav p {
     color: white; }
