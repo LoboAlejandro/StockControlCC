@@ -1,0 +1,47 @@
+.main{
+    @extend %flexRow;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.4rem 0;
+
+    &__section{
+        @extend %flexColumn;
+        width: 9rem;
+        margin: 0.3rem;
+        padding: 0.5rem 0;
+        border: dotted #616161 1px;
+        border-radius: 15px;
+
+        &__imgid{
+            @extend %flexColumn;
+            align-items: center;
+
+            &__img{
+                height: 7rem;
+                width: fit-content;
+            }
+
+            &__id{
+                font-size: 0.8rem;
+            }
+        }
+        
+        &__data{
+            @extend %flexColumn;
+            align-items: center;
+            
+            &__nombre{
+                font-size: 1.4rem;
+            }
+            
+            &__h3{
+                font-size: 1rem;
+            }
+
+            &__btns{
+                @extend %flexRow;
+                
+            }
+        }
+    }
+}

@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.nav, .nav__div, .nav__div .divInput i {
+.nav, .nav__div, .nav__div .divInput i, .main__section, .main__section__imgid, .main__section__data {
   display: flex;
   flex-flow: column; }
 
-.nav__header, .nav__div .divInput {
+.nav__header, .nav__div .divInput, .main, .main__section__data__btns {
   display: flex;
   flex-flow: row; }
 
@@ -17,7 +17,7 @@
   width: 100%;
   background-color: white;
   padding: 0 0 0.5rem 0;
-  border-bottom: 0.1rem black solid; }
+  border-bottom: 0.2rem black dotted; }
   .nav__header {
     padding: 1rem 1rem 0.5rem 1rem;
     justify-content: space-between;
@@ -49,13 +49,41 @@
         border: none;
         height: 100%;
         font-size: 1.3rem; }
+        .nav__div .divInput__input:focus {
+          outline: none; }
       .nav__div .divInput i {
         justify-content: center;
         align-items: center;
         width: 2rem;
         height: 100%;
         border-left: #b4b4b4 2px solid; }
+        .nav__div .divInput i:hover {
+          cursor: pointer; }
       .nav__div .divInput .fa-magnifying-glass {
         color: #616161; }
   .nav p {
     color: white; }
+
+.main {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.4rem 0; }
+  .main__section {
+    width: 9rem;
+    margin: 0.3rem;
+    padding: 0.5rem 0;
+    border: dotted #616161 1px;
+    border-radius: 15px; }
+    .main__section__imgid {
+      align-items: center; }
+      .main__section__imgid__img {
+        height: 7rem;
+        width: fit-content; }
+      .main__section__imgid__id {
+        font-size: 0.8rem; }
+    .main__section__data {
+      align-items: center; }
+      .main__section__data__nombre {
+        font-size: 1.4rem; }
+      .main__section__data__h3 {
+        font-size: 1rem; }

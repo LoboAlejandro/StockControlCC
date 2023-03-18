@@ -3,7 +3,7 @@
     width: 100%;
     background-color: white;
     padding: 0 0 0.5rem 0;
-    border-bottom: 0.1rem black solid;
+    border-bottom: 0.2rem black dotted;
 
     &__header{
         @extend %flexRow;
@@ -12,13 +12,11 @@
         align-items: center;
 
         .div__logo{
-
-            &__a{
-
-            }
+            
         }
 
         .div__menu{
+            
             .fa-solid{
                 color: black;
             }
@@ -60,6 +58,10 @@
                 border: none;
                 height: 100%;
                 font-size: 1.3rem;
+
+                &:focus{
+                    outline: none;
+                }
             }
 
             i{
@@ -69,6 +71,10 @@
                 width: 2rem;
                 height: 100%;
                 border-left: #b4b4b4 2px solid;
+
+                &:hover{
+                    cursor: pointer;
+                }
             }
 
             .fa-magnifying-glass{
