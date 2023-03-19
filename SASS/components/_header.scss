@@ -11,14 +11,57 @@
         justify-content: space-between;
         align-items: center;
 
-        .div__logo{
-            
-        }
-
         .div__menu{
-            
+            width: 3rem;
+            height: 3rem;
+            @extend %flexColumn;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &:hover{
+                background-color: #d8d8d8;
+                .div__menu__ul{
+                    display: block;
+                }
+            }
+
             .fa-solid{
                 color: black;
+
+                &:hover{
+                    transform: rotate(-90deg);
+                }
+            }
+
+            &__ul{
+                display: none;
+                position: absolute;
+                @extend %flexColumn;
+                top:100%;
+                right: 0;
+                text-decoration: none;
+                list-style-type: none;
+                background-color: #d8d8d8;
+                width: fit-content;
+                padding: 1rem;
+
+                &:hover{
+                    background-color: #878787;
+                    color: white;
+
+                    .fa-user{
+                        color: white;
+                    }
+                }
+
+                li{
+                    @extend %flexRow;
+                    align-items: center;
+                    .fa-user{
+                        margin: 0 0 0 0.5rem;
+                    }
+                }
             }
         }
     }

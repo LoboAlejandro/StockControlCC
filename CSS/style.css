@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.nav, .nav__div, .nav__div .divInput i, .main__section, .main__section__imgid, .main__section__data {
+.nav, .nav__header .div__menu, .nav__header .div__menu__ul, .nav__div, .nav__div .divInput i, .main__section, .main__section__imgid, .main__section__data, .main__section__data__btns, .main__section__data__btns .botoneraContador button {
   display: flex;
   flex-flow: column; }
 
-.nav__header, .nav__div .divInput, .main, .main__section__data__btns {
+.nav__header, .nav__header .div__menu__ul li, .nav__div .divInput, .main, .main__section__data__btns .botoneraContador, .main__section__data__btns .botonera {
   display: flex;
   flex-flow: row; }
 
@@ -22,8 +22,39 @@
     padding: 1rem 1rem 0.5rem 1rem;
     justify-content: space-between;
     align-items: center; }
-    .nav__header .div__menu .fa-solid {
-      color: black; }
+    .nav__header .div__menu {
+      width: 3rem;
+      height: 3rem;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .nav__header .div__menu:hover {
+        background-color: #d8d8d8; }
+        .nav__header .div__menu:hover .div__menu__ul {
+          display: block; }
+      .nav__header .div__menu .fa-solid {
+        color: black; }
+        .nav__header .div__menu .fa-solid:hover {
+          transform: rotate(-90deg); }
+      .nav__header .div__menu__ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: #d8d8d8;
+        width: fit-content;
+        padding: 1rem; }
+        .nav__header .div__menu__ul:hover {
+          background-color: #878787;
+          color: white; }
+          .nav__header .div__menu__ul:hover .fa-user {
+            color: white; }
+        .nav__header .div__menu__ul li {
+          align-items: center; }
+          .nav__header .div__menu__ul li .fa-user {
+            margin: 0 0 0 0.5rem; }
   .nav .logo {
     width: 5rem; }
   .nav__div {
@@ -87,3 +118,47 @@
         font-size: 1.4rem; }
       .main__section__data__h3 {
         font-size: 1rem; }
+      .main__section__data__btns {
+        width: 100%; }
+        .main__section__data__btns .botoneraContador {
+          justify-content: center;
+          align-items: center;
+          margin: 0.3rem 0 0.5rem 0; }
+          .main__section__data__btns .botoneraContador p {
+            margin: 0 0.7rem;
+            font-size: 1.2rem; }
+          .main__section__data__btns .botoneraContador button {
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            width: 2rem;
+            height: 2rem;
+            background: #d7d7d7;
+            border: none;
+            border-radius: 13px; }
+            .main__section__data__btns .botoneraContador button:hover {
+              background: #9d9d9d;
+              color: white;
+              cursor: pointer; }
+        .main__section__data__btns .botonera {
+          width: 100%;
+          justify-content: space-evenly;
+          align-items: center; }
+          .main__section__data__btns .botonera .btnMasInfo {
+            border: dotted 1px black;
+            border-radius: 8px;
+            padding: 0.2rem 0.2rem;
+            height: fit-content; }
+            .main__section__data__btns .botonera .btnMasInfo:hover {
+              color: white;
+              background: #b9b9b9; }
+          .main__section__data__btns .botonera .btnRetirar {
+            border: dotted 1px white;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            padding: 0.1rem 0.3rem;
+            font-size: 1.3rem; }
+            .main__section__data__btns .botonera .btnRetirar:hover {
+              background-color: #bab9b9;
+              color: black; }
