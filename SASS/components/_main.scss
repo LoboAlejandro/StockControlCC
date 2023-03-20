@@ -1,6 +1,6 @@
 .main{
     @extend %flexRow;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 0.4rem 0;
 
@@ -15,9 +15,10 @@
         &__imgid{
             @extend %flexColumn;
             align-items: center;
-
+            
             &__img{
                 height: 7rem;
+                object-fit: cover;
                 width: fit-content;
             }
 

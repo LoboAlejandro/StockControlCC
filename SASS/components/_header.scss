@@ -86,26 +86,34 @@
             color: #616161;
         }
 
-        .divInput{
+        &__inpFil{
             @extend %flexRow;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
-            border: #616161 0.15rem solid;
-            border-radius: 14px;
-            width: 70%;
-            height: 1.5rem;
-            padding: 0.2rem;
+            width: 100%;
 
-            &__input{
-                width: 100%;
-                border: none;
-                height: 100%;
-                font-size: 1.3rem;
-
-                &:focus{
-                    outline: none;
+            .divInput{
+                @extend %flexRow;
+                justify-content: space-between;
+                align-items: center;
+                border: #616161 0.15rem solid;
+                border-radius: 14px;
+                width: 70%;
+                height: 1.5rem;
+                padding: 0.2rem;
+    
+                &__input{
+                    width: 100%;
+                    border: none;
+                    height: 100%;
+                    font-size: 1.3rem;
+    
+                    &:focus{
+                        outline: none;
+                    }
                 }
-            }
+        }
+
 
             i{
                 @extend %flexColumn;

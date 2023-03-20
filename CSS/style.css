@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   text-decoration: none; }
 
-.nav, .nav__header .div__menu, .nav__header .div__menu__ul, .nav__div, .nav__div .divInput i, .main__section, .main__section__imgid, .main__section__data, .main__section__data__btns, .main__section__data__btns .botoneraContador button {
+.nav, .nav__header .div__menu, .nav__header .div__menu__ul, .nav__div, .nav__div__inpFil i, .main__section, .main__section__imgid, .main__section__data, .main__section__data__btns, .main__section__data__btns .botoneraContador button {
   display: flex;
   flex-flow: column; }
 
-.nav__header, .nav__header .div__menu__ul li, .nav__div .divInput, .main, .main__section__data__btns .botoneraContador, .main__section__data__btns .botonera {
+.nav__header, .nav__header .div__menu__ul li, .nav__div__inpFil, .nav__div__inpFil .divInput, .main, .main__section__data__btns .botoneraContador, .main__section__data__btns .botonera {
   display: flex;
   flex-flow: row; }
 
@@ -67,36 +67,40 @@
       padding: 0;
       margin: 0 0 0.2rem 0;
       color: #616161; }
-    .nav__div .divInput {
-      justify-content: space-between;
+    .nav__div__inpFil {
+      justify-content: space-evenly;
       align-items: center;
-      border: #616161 0.15rem solid;
-      border-radius: 14px;
-      width: 70%;
-      height: 1.5rem;
-      padding: 0.2rem; }
-      .nav__div .divInput__input {
-        width: 100%;
-        border: none;
-        height: 100%;
-        font-size: 1.3rem; }
-        .nav__div .divInput__input:focus {
-          outline: none; }
-      .nav__div .divInput i {
+      width: 100%; }
+      .nav__div__inpFil .divInput {
+        justify-content: space-between;
+        align-items: center;
+        border: #616161 0.15rem solid;
+        border-radius: 14px;
+        width: 70%;
+        height: 1.5rem;
+        padding: 0.2rem; }
+        .nav__div__inpFil .divInput__input {
+          width: 100%;
+          border: none;
+          height: 100%;
+          font-size: 1.3rem; }
+          .nav__div__inpFil .divInput__input:focus {
+            outline: none; }
+      .nav__div__inpFil i {
         justify-content: center;
         align-items: center;
         width: 2rem;
         height: 100%;
         border-left: #b4b4b4 2px solid; }
-        .nav__div .divInput i:hover {
+        .nav__div__inpFil i:hover {
           cursor: pointer; }
-      .nav__div .divInput .fa-magnifying-glass {
+      .nav__div__inpFil .fa-magnifying-glass {
         color: #616161; }
   .nav p {
     color: white; }
 
 .main {
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0.4rem 0; }
   .main__section {
@@ -109,6 +113,7 @@
       align-items: center; }
       .main__section__imgid__img {
         height: 7rem;
+        object-fit: cover;
         width: fit-content; }
       .main__section__imgid__id {
         font-size: 0.8rem; }
@@ -162,3 +167,19 @@
             .main__section__data__btns .botonera .btnRetirar:hover {
               background-color: #bab9b9;
               color: black; }
+
+@media only screen and (min-width: 425px) {
+  .main__section {
+    width: 12rem;
+    margin: 0.7rem 0.5rem; }
+    .main__section__imgid__img {
+      height: 10rem; }
+    .main__section__data__btns .botoneraContador {
+      margin: 0.5rem 0 0.7rem 0; }
+      .main__section__data__btns .botoneraContador p {
+        margin: 0 0.9rem; }
+    .main__section__data__btns .botonera .btnMasInfo {
+      font-size: 1rem;
+      padding: 0.3rem; }
+    .main__section__data__btns .botonera .btnRetirar {
+      font-size: 1.6rem; } }
